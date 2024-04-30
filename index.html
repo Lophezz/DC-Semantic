@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsivo.css">
     <link rel="shortcut icon" type="imagex/png" href="assets/icon.png">
     <link rel="stylesheet" href="./Semantic-UI-CSS-master/semantic.min.css">
     <title>DC Comics</title>
@@ -16,19 +17,19 @@
             <div class="item">
                 <img src="./assets/logo.png">
             </div>
-            <a id="navegar" class="item">INÍCIO</a>
-            <a id="navegar" class="item">JOGOS</a>
-            <a id="navegar" class="item">HQ</a>
-            <a id="navegar" class="item">PRODUTOS</a>
-            <a id="navegar" class="item">CONTATO</a>
+            <a id="navegar" href="#Inicio" class="item">INÍCIO</a>
+            <a id="navegar" href="#Jogos" class="item">JOGOS</a>
+            <a id="navegar" href="#HQ" class="item">HQ</a>
+            <a id="navegar" href="#Produtos" class="item">PRODUTOS</a>
+            <a id="navegar" href="#Contato" class="item">CONTATO</a>
         </div>
     </header>
     <main>
-        <section class="banner-img">
-            <h1 class="banner-title">Liga da Justiça</h1>
+        <section id="Inicio" class="banner-img">
+            <h1 id="Jogos" class="banner-title">Liga da Justiça</h1>
         </section>
         <section class="game-area">
-            <h1 class="title-jogosbran">Jogos</h1>
+            <h1 class="title-jogos">Jogos</h1>
             <div class="ui link cards blocos">
                 <div class="card">
                     <div class="image">
@@ -64,23 +65,23 @@
                 </div>
                 <div class="card">
                     <div class="image">
-                      <img src="assets/LEGOBatman2.png">
+                        <img src="assets/LEGOBatman2.png">
                     </div>
                     <div class="content">
-                      <div class="header">Lego Batman 2</div>
-                      <div class="meta">
-                        <a>2012</a>
-                      </div>
+                        <div class="header">Lego Batman 2</div>
+                        <div class="meta">
+                            <a>2012</a>
+                        </div>
                     </div>
                     <div class="extra content">
-                      <span class="right floated valor-jogos">
-                        R$19,99
-                      </span>
+                        <span class="right floated valor-jogos">
+                            R$19,99
+                        </span>
                     </div>
-                  </div>
+                </div>
             </div>
         </section>
-        <section class="banner-meio">
+        <section id="HQ" class="banner-meio">
             <h3 id="sobre">UM POUCO SOBRE NÓS</h3>
             <p id="sobre-texto">A DC Comics é uma das principais editoras de quadrinhos do mundo, conhecida por criar
                 personagens icônicos como Superman, Batman e Mulher-Maravilha. Com uma vasta gama de histórias em
@@ -90,57 +91,131 @@
         <section class="hq-area">
             <h1 class="title-hq">HQ's</h1>
             <div class="container-hq">
-                <div class="hq">
-                    <img class="img-hq" src="assets/choque.webp">
-                    <p class="nome-hq">Super Choque</p>
-                    <p class="sobre-hq">Fogo e drama em familia!</p>
-                    <p class="valor-hq">R$19,90</p>
-                </div>
-                <div class="hq">
-                    <img class="img-hq" src="assets/flash.png">
-                    <p class="nome-hq">Batman & Flash</p>
-                    <p class="sobre-hq">O Bóton</p>
-                    <p class="valor-hq">R$39,90</p>
-                </div>
-                <div class="hq">
-                    <img class="img-hq" src="assets/Superman.png">
-                    <p class="nome-hq">Superman</p>
-                    <p class="sobre-hq">Para o alto e avante</p>
-                    <p class="valor-hq">R$59,90</p>
-                </div>
-                <div class="hq">
-                    <img class="img-hq" src="assets/crise_sombria.webp">
-                    <p class="nome-hq">Crise Sombria </p>
-                    <p class="sobre-hq">Volume 1</p>
-                    <p class="valor-hq">R$34,90</p>
-                </div>
-                <div class="hq">
-                    <img class="img-hq" src="assets/besouroazul.png">
-                    <p class="nome-hq">Besouro Azul</p>
-                    <p class="sobre-hq">Dia de Formatura</p>
-                    <p class="valor-hq">R$31,90</p>
+                <div class="ui link cards blocos">
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/choque.webp">
+                        </div>
+                        <div class="content">
+                            <div class="header">Super Choque</div>
+                            <div class="meta">
+                                <a>FOGO E DRAMA EM FAMÁLIA</a>
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <span class="right floated valor-jogos">
+                                R$19,90
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/flash.png">
+                        </div>
+                        <div class="content">
+                            <div class="header">Batman & Flash</div>
+                            <div class="meta">
+                                <a>O BÓTON</a>
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <span class="right floated valor-jogos">
+                                R$39,90
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/Superman.png">
+                        </div>
+                        <div class="content">
+                            <div class="header">Superman</div>
+                            <div class="meta">
+                                <a>PARA O ALTO E AVANTE!</a>
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <span class="right floated valor-jogos">
+                                R$59,90
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/crise_sombria.webp">
+                        </div>
+                        <div class="content">
+                            <div class="header">Crise Sombria</div>
+                            <div class="meta">
+                                <a>VOLUME 1</a>
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <span class="right floated valor-jogos">
+                                R$34,90
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="./assets/besouroazul.png">
+                        </div>
+                        <div class="content">
+                            <div class="header">Besouro Azul</div>
+                            <div class="meta">
+                                <a>DIA DE FORMATURA</a>
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <span class="right floated valor-jogos">
+                                R$19,90
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="produtos-area">
+        <section id="Produtos" class="produtos-area">
             <h1 class="title-produtos">Produtos</h1>
             <div class="container-produtos">
-                <div class="produtos">
-                    <img class="img-produtos" src="assets/tshirt_1.webp">
-                    <p class="nome-produtos">Shazam Camiseta Classica</p>
-                    <p class="valor-produtos">R$99,90</p>
+                <div>
+                    <img class="ui medium rounded image img-produtos" src="./assets/tshirt_1.webp">
+                    <h4 class="ui header nome-produtos">Camiseta Shazam</h4>
                 </div>
-                <div class="produtos">
-                    <img class="img-produtos" id="adam" src="assets/tshir_2.webp">
-                    <p class="nome-produtos">Black Adam Camiseta</p>
-                    <p class="valor-produtos" id="adam-valor">R$99,90</p>
+                    
+                <div>
+                    <img class="ui medium rounded image img-produtos" src="./assets/tshir_2.webp">
+                    <h4 class="ui header nome-produtos">Camiseta Black Adam</h4>
                 </div>
-                <div class="produtos">
-                    <img class="img-produtos" src="assets/tshirt_3.webp">
-                    <p class="nome-produtos">Kit Batman</p>
-                    <p class="valor-produtos">R$109,90</p>
+                
+                <div>
+                    <img class="ui medium rounded image img-produtos" src="./assets/tshirt_3.webp">
+                    <h4 class="ui header nome-produtos">Kit Batman</h4>
                 </div>
+                
+
         </section>
+
+
+
+        <div class="formulario">
+            <form id="formulario" class="ui form">
+                <h2>Fala conosco</h2>
+                <div class="field">
+                    <label>Nome</label>
+                    <input type="text" placeholder="Digite o seu nome">
+                </div>
+                <div class="field">
+                    <label>E-mail</label>
+                    <input type="text" placeholder="Digite o seu e-mail">
+                </div>
+                <div class="field">
+                    <textarea style="height: 109px;" placeholder="Assunto"></textarea>
+                </div>
+                <div class="ui blue labeled submit icon button"><i class="share icon"></i>Enviar</div>
+            </form>
+        </div>
+            
     </main>
     <footer class="main-footer">
         <a class="action" href="">
