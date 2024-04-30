@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --dc-color: #0276f2;
+    --page-gap: 2rem;
+    --dinheiro-color: #096311;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    gap: var(--page-gap);
+}
+
+#title-page {
+    color: var(--dc-color);
+    padding-right: 28em;
+    flex-direction: row;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: var(--page-gap);
+    padding-right: 5em;
+}
+
+ul li {
+    list-style: none;
+}
+
+#navegar {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    transition: 0.5s;
+}
+
+#navegar:hover {
+    color: var(--dc-color);
+}
+
+.dc-logo {
+    width: 3rem;
+    height: 3rem;
+}
+
+.banner-img {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-image: fill 0 linear-gradient(#0003, #000);
+    background-image: url('../assets/banner-img.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.banner-title {
+    color: white;
+    filter: brightness(1);
+    letter-spacing: 4px;
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border: 0.1rem white solid;
+    transition: 0.5s;
+}
+
+.banner-title:hover {
+    box-shadow: 2px 8px 10px 2px rgba(0, 0, 0, 0.411);
+    transition: 0.5s;
+    transform: scale(1.02)
+}
+
+.blocos {
+    display: flex;
+    justify-content: center;
+}
+
+.title-jogos {
+    
+    color: #000;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    transition: 0.5s;
+}
+
+.game-area {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.game-area .title-jogos:hover {
+    transition: 0.5s;
+    letter-spacing: 4px;
+}
+
+.jogos-container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--page-gap);
+}
+
+.img-jogo {
+    width: 10rem;
+    height: 12rem;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.img-jogo:hover {
+    box-shadow: 2px 8px 10px 2px rgba(0, 0, 0, 0.411);
+    transition: 0.5s;
+    transform: scale(1.02)
+}
+
+.nome-jogo {
+    font-weight: bold;
+}
+
+.valor-jogos {
+    color: var(--dinheiro-color);
+    font-style: oblique;
+    padding-left: 6rem;
+}
+
+#sobre {
+    text-align: center;
+    color: white;
+    padding-bottom: 0.5em;
+
+}
+
+#sobre:hover {
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+#sobre-texto {
+    text-align: center;
+    display: flex;
+    padding-top: 0.5em;
+    font-style: oblique;
+    color: white;
+}
+
+.banner-meio {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-image: fill 0 linear-gradient(#0003, #000);
+    background-image: url('../assets/banner-meio.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.hq-area {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+    padding-bottom: 0.5rem;
+
+}
+
+.title-hq {
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    transition: 0.5s;
+}
+
+.hq-area .title-hq:hover {
+    transition: 0.5s;
+    letter-spacing: 4px;
+}
+
+.container-hq {
+    display: flex;
+    flex-direction: row;
+    gap: var(--page-gap);
+}
+
+.img-hq {
+    width: 10rem;
+    height: 15rem;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.img-hq:hover {
+    box-shadow: 2px 8px 10px 2px rgba(0, 0, 0, 0.411);
+    transition: 0.5s;
+    transform: scale(1.02)
+}
+
+.nome-hq {
+    font-weight: bold;
+}
+
+.sobre-hq {
+    font-size: x-small;
+    text-transform: uppercase;
+}
+
+.valor-hq {
+    color: var(--dinheiro-color);
+    font-style: oblique;
+    padding-left: 6rem;
+}
+
+.title-produtos {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    transition: 0.5s;
+}
+
+.produtos-area .title-produtos:hover {
+    transition: 0.5s;
+    letter-spacing: 4px;
+}
+
+.container-produtos {
+    display: flex;
+    flex-direction: row;
+    gap: var(--page-gap);
+    padding-bottom: 2rem;
+}
+
+.img-produtos {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.img-produtos:hover {
+    transition: 0.5s;
+    transform: scale(1.02)
+}
+
+#adam {
+    width: 35rem;
+    height: 30rem;
+}
+
+.nome-produtos {
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+.valor-produtos {
+    color: var(--dinheiro-color);
+    font-style: oblique;
+    font-size: 20px;
+    padding-left: 14em;
+}
+
+#adam-valor {
+    padding-left: 22em;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-image: fill 0 linear-gradient(#0003, #000);
+}
+
+.main-footer .action {
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+.img-rede {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.img-discord {
+    width: 2.5rem;
+    height: 2.0rem;
+    transition: 0.5s;
+}
+
+.img-rede .img-discord:hover {
+    transition: 0.5s;
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+.credito {
+    color: white;
+    font-weight: bold;
+}
