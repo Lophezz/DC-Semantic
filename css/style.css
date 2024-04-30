@@ -216,6 +216,7 @@ ul li {
     justify-content: center;
     display: flex;
     padding-top: 2rem;
+    color: black;
 }
 
 .hq-area .title-hq:hover {
