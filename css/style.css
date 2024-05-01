@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
 
 :root {
     --dc-color: #0276f2;
@@ -40,6 +44,8 @@ main {
     padding-top: 60px;
     gap: var(--page-gap);
 }
+
+
 
 #title-page {
     color: var(--dc-color);
@@ -166,10 +172,22 @@ ul li {
     padding-left: 6rem;
 }
 
+.ui p , h3 {
+    color:white;
+
+}
+
+.ui p , h3:hover {
+    letter-spacing: 2px;
+    transition: 0.5s;
+
+}
+
 #sobre {
     text-align: center;
     color: white;
     padding-bottom: 0.5em;
+    font-size: 2em;
 
 }
 
@@ -179,6 +197,7 @@ ul li {
 }
 
 #sobre-texto {
+    font-size: 10em;
     text-align: center;
     display: flex;
     padding-top: 0.5em;
@@ -188,7 +207,7 @@ ul li {
 
 .banner-meio {
     width: 100%;
-    height: 10rem;
+    height: 16rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -283,7 +302,6 @@ ul li {
 }
 
 .img-produtos {
-
     border-radius: 4px;
     transition: 0.5s;
 }
@@ -301,12 +319,8 @@ ul li {
 .valor-produtos {
     color: var(--dinheiro-color);
     font-style: oblique;
-    font-size: 20px;
+    font-size: 16px;
     padding-left: 14em;
-}
-
-#adam-valor {
-    padding-left: 22em;
 }
 
 .formulario {
@@ -328,7 +342,7 @@ ul li {
     border-image: fill 0 linear-gradient(#0003, #000);
 }
 
-.main-footer .action {
+.main-footer {
     margin-right: 5rem;
     margin-left: 5rem;
 }
@@ -352,7 +366,13 @@ ul li {
     transition: 0.5s;
 }
 
-.credito {
-    color: white;
-    font-weight: bold;
+#size {
+    font-size: 3rem;
 }
+
+.center {
+    height: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsivo.css">
     <link rel="shortcut icon" type="imagex/png" href="assets/icon.png">
     <link rel="stylesheet" href="./Semantic-UI-CSS-master/semantic.min.css">
     <title>DC Comics</title>
@@ -13,16 +12,18 @@
 
 <body>
     <header>
-        <div class="ui stackable menu">
-            <div class="item">
-                <img src="./assets/logo.png">
+        <nav>
+            <div class="ui top fixed menu">
+                <div class="item">
+                    <img src="./assets/logo.png">
+                </div>
+                <a id="navegar" href="#Inicio" class="item ui">Início</a>
+                <a id="navegar" href="#Jogos" class="item ui">Jogos</a>
+                <a id="navegar" href="#HQ" class="item ui">HQ</a>
+                <a id="navegar" href="#Produtos" class="item ui">Produtos</a>
+                <a id="navegar" href="#Contato"class="item ui">Contato</a>
             </div>
-            <a id="navegar" href="#Inicio" class="item">INÍCIO</a>
-            <a id="navegar" href="#Jogos" class="item">JOGOS</a>
-            <a id="navegar" href="#HQ" class="item">HQ</a>
-            <a id="navegar" href="#Produtos" class="item">PRODUTOS</a>
-            <a id="navegar" href="#Contato" class="item">CONTATO</a>
-        </div>
+        </nav>
     </header>
     <main>
         <section id="Inicio" class="banner-img">
@@ -81,9 +82,9 @@
                 </div>
             </div>
         </section>
-        <section id="HQ" class="banner-meio">
-            <h3 id="sobre">UM POUCO SOBRE NÓS</h3>
-            <p id="sobre-texto">A DC Comics é uma das principais editoras de quadrinhos do mundo, conhecida por criar
+        <section id="HQ" class="banner-meio ui">
+            <h3 id="sobre ui">UM POUCO SOBRE NÓS</h3>
+            <p id="sobre-texto ui">A DC Comics é uma das principais editoras de quadrinhos do mundo, conhecida por criar
                 personagens icônicos como Superman, Batman e Mulher-Maravilha. Com uma vasta gama de histórias em
                 quadrinhos, filmes, séries de TV e jogos, a DC continua a cativar fãs de todas as idades com suas
                 narrativas emocionantes e personagens inesquecíveis.</p>
@@ -180,27 +181,23 @@
             <div class="container-produtos">
                 <div>
                     <img class="ui medium rounded image img-produtos" src="./assets/tshirt_1.webp">
-                    <h4 class="ui header nome-produtos">Camiseta Shazam</h4>
+                    <h4 class="ui header nome-produtos">Camiseta Shazam Clássica</h4>
+                    <p class="valor-produtos">R$99,90</p>
                 </div>
-                    
                 <div>
                     <img class="ui medium rounded image img-produtos" src="./assets/tshir_2.webp">
                     <h4 class="ui header nome-produtos">Camiseta Black Adam</h4>
+                    <p class="valor-produtos">R$99,90</p>
                 </div>
-                
                 <div>
                     <img class="ui medium rounded image img-produtos" src="./assets/tshirt_3.webp">
                     <h4 class="ui header nome-produtos">Kit Batman</h4>
+                    <p class="valor-produtos">R$109,90</p>
                 </div>
-                
-
         </section>
-
-
-
-        <div class="formulario">
+        <div class="formulario" id="Contato">
             <form id="formulario" class="ui form">
-                <h2>Fala conosco</h2>
+                <h2>Deixe uma mensagem</h2>
                 <div class="field">
                     <label>Nome</label>
                     <input type="text" placeholder="Digite o seu nome">
@@ -215,24 +212,22 @@
                 <div class="ui blue labeled submit icon button"><i class="share icon"></i>Enviar</div>
             </form>
         </div>
-            
+
     </main>
-    <footer class="main-footer">
-        <a class="action" href="">
-            <img class="img-rede" src="assets/instagram.png">
-        </a>
-        <a class="action" href="">
-            <img class="img-rede" src="assets/github.png">
-        </a>
-        <a class="action" href="">
-            <img class="img-discord" src="assets/discord.png">
-        </a>
-        <a class="action" href="">
-            <img class="img-rede" src="assets/linkedin.webp">
-        </a>
-        <div class="credito">
-            <p>Criado por Matheus Lopes Oliveira</p>
-            <p>Primeiro Projeto de Desenvolvimento Web I</p>
+    <footer>
+        <div class="ui inverted menu center">
+            <a class="item">
+                <i id="size" class="linkedin icon"></i>
+            </a>
+            <a class="item">
+                <i id="size" class="github icon"></i>
+            </a>
+            <a class="item">
+                <i id="size" class="instagram icon"></i>
+            </a>
+            <a id="linha" class="item">
+                <i id="size" class="discord icon"></i>
+            </a>
         </div>
     </footer>
 </body>
